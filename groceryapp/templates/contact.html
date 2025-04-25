@@ -1,0 +1,68 @@
+{% load static %}
+<html>
+<head>
+  <title>Contact US</title>
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+<body>
+{% include 'navigation.html' %}
+<div class="container">
+  <div class="innerwrap">
+
+    <section class="section1 clearfix">
+      <div class="textcenter">
+        <h1 class="shtext">Contact Us</h1>
+        <span class="seperator"></span>
+        <span class="shtext">Drop Us a Mail</span>
+      </div>
+    </section>
+
+    <section class="section2 clearfix">
+      <div class="col2 column1 first">
+        <div class="sec2map" style="overflow:hidden;height:700px;width:100%;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.704278354858!2d79.73290907492678!3d21.384478875968297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd3a14cba91bb43%3A0xa32f1d79d882b98a!2sStation%20Rd%2C%20Goverdhan%20Nagar%2C%20Tumsar%2C%20Maharashtra%20441912!5e0!3m2!1sen!2sin!4v1713342556613!5m2!1sen!2sin" 
+            width="100%" 
+            height="700" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col2 column2 last">
+        <div class="sec2innercont">
+          <div class="sec2addr">
+            <p><span class="collig">Phone :</span> +91-9423415893</p>
+            <p><span class="collig">Email :</span> krishna.traders.tumsar@gmail.com</p>
+            <p><span class="collig">Address :</span> Station Road, Goverdhan Nagar, Tumsar, Maharashtra, 441912.</p>
+          </div>
+        </div>
+        <div class="sec2contactform">
+          <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+          <form action="">
+            <div class="clearfix">
+              <input class="col2 first" type="text" placeholder="FirstName">
+              <input class="col2 last" type="text" placeholder="LastName">
+            </div>
+            <div class="clearfix">
+              <input class="col2 first" type="email" placeholder="Email">
+              <input class="col2 last" type="text" placeholder="Contact Number">
+            </div>
+            <div class="clearfix">
+              <textarea name="textarea" cols="30" rows="7">Your message here...</textarea>
+            </div>
+            <div class="clearfix">
+              <input type="submit" value="Send">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+</body>
+</html>

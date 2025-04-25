@@ -1,0 +1,78 @@
+{% load static %}
+<html>
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+{% include 'navigation.html' %}
+<section class="about-section">
+  <div class="container">
+    <div class="row">
+      <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+        <div class="inner-column">
+          <div class="sec-title">
+            <span class="title">About Krishna Traders</span>
+            <h2>Your Trusted Furniture Partner Since 2006</h2>
+          </div>
+          <div class="text">
+            Krishna Traders is a well-established furniture shop located at Station Road, Goverdhan Nagar, Tumsar, Maharashtra 441912. Since 2006, we have been dedicated to providing top-quality furniture that brings both style and comfort to your home and office spaces.
+          </div>
+          <div class="text">
+            We specialize in a wide range of wooden and modern furniture including beds, sofas, dining tables, chairs, wardrobes, and modular solutions. Our mission is to combine durability with beautiful designs that reflect both traditional craftsmanship and contemporary elegance.
+          </div>
+          <div class="text">
+            At Krishna Traders, customer satisfaction is our top priority. We strive to offer personalized service, honest pricing, and a collection of furniture pieces that truly make your space feel like home.
+          </div>
+          <div class="btn-box">
+            <a href="{% url 'contact' %}" class="theme-btn btn-style-one">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="image-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column wow fadeInLeft">
+          <div class="author-desc">
+            <h2>Naresh M. Yerne</h2>
+            <span>Owner & Founder</span>
+          </div>
+          <figure class="image-1">
+            <a href="#" class="lightbox-image" data-fancybox="images">
+              <img title="Naresh M. Yerne" src="{% static '\images\owner_KrishnaTraders.png' %}" alt="Naresh M. Yerne">
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-title">
+      <span class="title">Our Vision</span>
+      <h2>Leading the Way in Quality & Craftsmanship</h2>
+    </div>
+    <div class="text">
+      Our goal at Krishna Traders is to become a symbol of trust and excellence in the furniture industry. We aim to continuously innovate, bringing you furniture that enhances your lifestyle, blends perfectly with your interiors, and lasts for generations.
+    </div>
+    <div class="text">
+      We believe in combining traditional woodworking skills with modern designs to create products that offer both functionality and aesthetic value.
+    </div>
+
+    <div class="sec-title">
+      <span class="title">About the Owner</span>
+      <h2>Naresh M. Yerne</h2>
+    </div>
+    <div class="text">
+      Mr. Naresh M. Yerne is the visionary behind Krishna Traders. With over 18+ years of experience in the furniture business, he has built a reputation for reliability, quality, and customer-first service. His dedication and leadership have been the driving force behind the store’s growth and success in Tumsar.
+    </div>
+    <div class="text">
+      Under his guidance, Krishna Traders continues to expand its offerings, embracing both classic and contemporary furniture styles to meet the changing needs of customers.
+    </div>
+
+    <div class="text">
+      <strong>Visit us and experience the warmth of well-crafted furniture!</strong>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
